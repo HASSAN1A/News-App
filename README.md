@@ -1,7 +1,7 @@
 # NEWS APP
 
 ####  A Python web application which shows news articles from various sources using the News API
-![alt text](app.png)
+![Description](app.png)
 ####  Live link:
 
 ## Description
@@ -35,8 +35,7 @@ Here are the features in summary:
 ## Requirements
 
 - This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
-- Once python is installed, install the folowing external libraries using pip:
-  - **`pip3 install pyperclip`**
+
   
 
 

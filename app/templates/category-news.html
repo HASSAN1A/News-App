@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+{%block content%}
+<div class="container-fluid ml-1 mr-0 mt-4">
+  <h3 class="text-center mb-3"><strong>Top {{category_name.title()}} World Headlines
+      {% if category_name=='business'%}
+      <i class="fa fa-briefcase" aria-hidden="true"></i>
+      {%elif category_name=='entertainment'%}
+      <i class="fa fa-music" aria-hidden="true"></i>
+      {%elif category_name=='general'%}
+      <i class="fa fa-globe" aria-hidden="true"></i>
+      {%elif category_name=='health'%}
+      <i class="fa fa-heartbeat" aria-hidden="true"></i>
+      {%elif category_name=='science'%}
+      <i class="fa fa-flask" aria-hidden="true"></i>
+      {%elif category_name=='sports'%}
+      <i class="fa fa-futbol-o" aria-hidden="true"></i>
+      {%elif category_name=='technology'%}
+      <i class="fa fa-microchip" aria-hidden="true"></i>
+      {% endif %}
+    </strong>
+  </h3>
+  <div class="row">
+    {{macro.displayArticleList(articles)}}
+  </div>
+</div>
+
+
+{%endblock%}

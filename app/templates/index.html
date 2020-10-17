@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{%block content%}
+<div class="container-fluid ml-2 mr-2 mt-4">
+  <form name="search_Form" class="form-inline mb-5 mt-5 mx-auto">
+    <input name="news_query" class="form-control mr-3" type="text" placeholder="Search Article" aria-label="Search">
+    <i class="fa fa-search mx-3" aria-hidden="true"></i>
+    <button class="btn btn-primary" type="submit" value="">Search</button>
+  </form>
+  <div class="row">
+    <div class="col-lg-4">
+      <h3 class="text-center mb-3"><strong>News Sources <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></strong>
+      </h3>
+      <div class="list-group list-group-flush">
+        {% for source in sources %}
+        <a href="{{url_for('.source_news',source_id=source.id)}}"
+          class="list-group-item list-group-item-action">{{source.name}}</a>
+        {%endfor%}
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <h3 class="text-center mb-3"><strong>Top World Headlines<i class="fa fa-globe" aria-hidden="true"></i></strong>
+      </h3>
+      <div class="row">
+        {{ macro.displayHeadlineArticleList(headlines)}}
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}

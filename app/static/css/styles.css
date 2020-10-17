@@ -1,0 +1,68 @@
+.body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: normal;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #07c9cf;
+  min-height: 80vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  font-size: 100%;
+}
+
+.header-bg {
+  background: url("../img/bg.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.wrap {
+  font: 'opensans-bold', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+  color: black;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar.solid {
+  background-color: #0cbe65;
+  background-image: linear-gradient(326deg, #4fd194 0%, #0a7887 74%);
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(216, 214, 214);
+  -webkit-transition: background-color 1s ease 0s;
+  -moz-transition: background-color 1s ease 0s;
+  -ms-transition: background-color 1s ease 0s;
+  -o-transition: background-color 1s ease 0s;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.blockquote-footer {
+  font-size: 100%;
+}
+
+.source-title {
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue 45 Light', cursive;
+}
+
+.form-inline {
+  width: 50%;
+  margin: auto;
+}

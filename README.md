@@ -61,6 +61,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 4. [CSS](https://www.w3schools.com/css/)
 5. [MDB 4.8.10](https://mdbootstrap.com/)
 
+####TEAM
 [Hassan Juma ](https://github.com/HASSAN1A)
 
 ## [License](https://github.com/HASSAN1A/News-App/blob/master/LICENSE.md)
